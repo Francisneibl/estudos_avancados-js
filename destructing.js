@@ -1,4 +1,4 @@
-//Destructing Assigment
+//Destructuring Assignment
 
 let frutas = ['maça','banana', 'abacate'];
 
@@ -12,7 +12,7 @@ console.log(banana);
 console.log(abacate);
 //"abacate"
 
-//Podemos usar Destructing em arrays multidimenção também.
+//Podemos usar Destructuring em arrays multidimenção também.
 let frutas2 = ['maça','banana', 'abacate',['melancia']];
 
 let [maca2, banana2, abacate2,[melancia]] = frutas2;
@@ -43,7 +43,7 @@ let person = {
 let {name} = person;
 //name = 'francisnei'
 
-/*Em objetos o destructing busca pelas chaves, para declarar variaveis 
+/*Em objetos o Destructuring busca pelas chaves, para declarar variaveis 
 com nomes personalizados digita-se a chave e o nome na variavel apos ':'.*/
 let {name: nome} = person
 //nome = 'francisnei'
@@ -80,7 +80,7 @@ var div = ({a, b}) => a + b;
 div({a: 5, b: 7});
 //12
 
-//Ainda podemos mesclar Destructing com Default Arguments
+//Ainda podemos mesclar Destructuring com Default Arguments
 
 var mult = ({a = 1, b = 1}) => a * b;
 mult({a: 5});
