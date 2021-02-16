@@ -18,4 +18,4 @@ fetch('http://localhost:5500/data.json')
     .catch(erro => console.log(erro));
 
 //O metodo fetch também aceito um segundo parametro sendo um objeto de configurações
-//fech('http://localhost:5500/data.json',{method: 'post'})
+//fech('http://localhost:5500/data.json',{method: 'post'}) 
