@@ -63,14 +63,14 @@ doOtherThingPromised = () => new Promise((resolve, reject)=>{
     }, 1000);
 })
 
-console.log(doSomethingPromised);//Promise {<pending>}
+console.log(doSomethingPromised());//Promise {<pending>}
 //O resultado será pending proque essa funcao só sera finalizada apos um timeout, oque acontence apos o console.log().
 
 //Podemos utilizar o metodo then, para executar algo apenas apos a finalização da promise.
-doSomethingPromised.then(data => console.log(data));//First data  Promise {<fulfilled>: undefined}
+doSomethingPromised().then(data => console.log(data));//First data  Promise {<fulfilled>: undefined}
 
 //Para caso ocorra algum erro basta utilizar o catch
-doSomethingPromised
+doSomethingPromised()
     .then(data => console.log(data))
     .catch(erro => console.log(erro));
 
